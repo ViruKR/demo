@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color:#fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+}
+
+<script>
+    
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Manual</span><br>Testing</li>
+                        <li><span>Automation</span><br>Script Running</li>
+                        <li><span>Web Development</span><br>Web App Developments</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Testing</li>
+                        <li><span>2022</span><br>Script Running</li>
+                        <li><span>2019-2022</span><br>Web App Developments</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>JNTUK from VLIFTS Guntur</li>
+                        <li><span>2017</span><br>BFIE from VJC Guntur</li>
+                        <li><span>2015</span><br>BFSE from VHS Guntur</li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    
+<script src="https://kit.fontawesome.com/3ca8a2dc05.js" crossorigin="anonymous"></script>
+https://www.buymeacoffee.com/easytutorials/e/110476
+   </script>
+</body>
+</html>
+
+
+
+<div class="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <h2>Gem -Prism Management</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                     Sed nulla nibh,tincidunt sit amet sapien quis, elementum molestie</p>
+                     <a href="#">Automation Testing</a>
+                </div>
+                <div>
+                    <h2>Ezeebie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                     Sed nulla nibh,tincidunt sit amet sapien quis, elementum molestie</p>
+                     <a href="#">Manual Testing</a>
+                </div>
+                <div>
+                    
+                    <h2>Gem -Prism Management</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                     Sed nulla nibh,tincidunt sit amet sapien quis, elementum molestie</p>
+                     <a href="#">Automation Testing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+/* ----------- Projects--------- */
+
+#projects{
+    padding: 30px 0;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project-list div{
+    background: #262626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 </div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Testing</li>
+                        <li><span>2022</span><br>Script Running</li>
+                        <li><span>2019-2022</span><br>Web App Developments</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>JNTUK from VLIFTS Guntur</li>
+                        <li><span>2017</span><br>BFIE from VJC Guntur</li>
+                        <li><span>2015</span><br>BFSE from VHS Guntur</li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/3ca8a2dc05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="#" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>QA Testing</p>
+                <h1>Hi, I'm <span>Sri Sai Vignesh Kadiyala</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!------- about ------->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla nibh, 
+                    tincidunt sit amet sapien quis, elementum molestie. Pellentesque 
+                    habitant morbi tristique senectus et netus et malesuada from ac tris 
+                    egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem
+                    tristique, dictum sapien etc, accumsan libero.</p>
+
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>   
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Manual</span><br>Testing</li>
+                        <li><span>Automation</span><br>Script Running</li>
+                        <li><span>Web Development</span><br>Web App Developments</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Testing</li>
+                        <li><span>2022</span><br>Script Running</li>
+                        <li><span>2019-2022</span><br>Web App Developments</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>JNTUK from VLIFTS Guntur</li>
+                        <li><span>2017</span><br>BFIE from VJC Guntur</li>
+                        <li><span>2015</span><br>BFSE from VHS Guntur</li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----Project----->
+    <div id="project">
+         <div class="container">
+             <h1 class="project-tiltle"> My Projects</h1>
+             <div class="project-list">
+                <div>
+                  <h2>Gemi -Prism Management</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla nibh, 
+                    tincidunt sit amet sapien quis, elementum molestie.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Ezeebiz</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nulla nibh, 
+                      tincidunt sit amet sapien quis, elementum molestie.</p>
+                      <a href="#">Learn More</a>
+                  </div>
+            </div>
+         </div>
+     </div>
+<!-------Contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>contact@eaxmple.com</p>
+                <p><i class="fa-solid fa-phone"></i>012345897</p>
+                <div class="social-icons">
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                 <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit">Submit</button>
+                </form>
+           </div>
+        </div>
+    </div>
+</div>
+   <script>
+   
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+    
+</body>
+</html>
